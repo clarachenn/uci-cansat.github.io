@@ -1,0 +1,314 @@
+body {
+    background-color:  black;
+    align-items: center;
+    text-align: left;
+    margin: 0;  
+    padding: 0;  
+    margin-top: 50px;
+    color: white;
+
+ }
+
+ @keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.75);  
+    padding: 10px;
+    position: fixed;  
+    width: 100%;  
+    top: 0;
+    z-index: 1000;  
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+}
+
+.header-logo {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+h1 {
+    font-size: 100px;
+    padding-top: 300px;
+    color: white; 
+    font-family: 'Bungee', Arial;
+    font-weight: bold;
+    /* text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.802);  */
+    text-shadow: 2px 2px 6px rgba(40, 51, 93, 0.802);   
+    text-align: center;
+    animation: fadeInUp 0.5s forwards;
+}
+
+h2 {
+    font-size: 32px;
+    color: rgb(40, 63, 97); 
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+    color: rgb(40, 63, 97); 
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+    color: rgb(40, 63, 97); 
+    font-family: Arial;
+}
+
+a {
+    color: rgb(40, 63, 97); 
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 0 0 16px rgba(165, 204, 239, 0.931), 0 0 20px rgba(165, 204, 239, 0.8), 0 0 30px rgba(165, 204, 239, 0.6);
+}
+
+
+/* navigation bar */
+nav {
+    display: flex;
+    padding-right: 30px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a{
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 0px 26px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 2px 3px 10px rgba(165, 204, 239, 0.931);  
+    font-family: "Work Sans", sans-serif;
+}
+
+nav li a:hover {
+    text-shadow: 0 0 16px rgba(165, 204, 239, 0.931), 0 0 20px rgba(165, 204, 239, 0.8), 0 0 30px rgba(165, 204, 239, 0.6);
+    transition: text-shadow 0.2s ease;  
+}
+
+
+nav li a.active {
+    text-shadow: 0 0 16px rgba(165, 204, 239, 0.931), 0 0 20px rgba(165, 204, 239, 0.8), 0 0 30px rgba(165, 204, 239, 0.6);
+    font-style: italic;
+}
+
+.nav-dropdown:hover .nav-dropdown-content {
+    display: block;
+}
+
+.nav-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1;
+}
+
+.nav-dropdown-content a {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* home page title */
+.home-title {
+    background-image: linear-gradient(to bottom, rgba(217, 213, 232, 0.135), rgba(139, 156, 205, 0.341)), url("../banner-images/rocket-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;  
+}
+
+/* home page main content */
+.home-content {
+    margin: auto;  
+    align-items: center;
+    background-color:  #f8fafc;
+}
+
+/* home page about container */
+.home-page-about {
+    width: 76%;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    margin: auto;
+}
+
+/* home page gallery container */
+.home-page-gallery {
+    padding-top: 20px;
+    padding-bottom: 120px;
+    /* background-color:  rgb(221, 221, 221); */
+}
+
+.gallery-panel-container {
+    width: 76%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+ 
+.home-mission-panel {
+    flex: 0 0 calc(30% - 20px); 
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    padding-bottom: 50px;
+    /* background-color: rgba(191, 199, 218, 0.823); */
+    background-color: rgba(210, 218, 235, 0.823);
+    border: 5px solid;
+    border-radius: 20px;
+    border-color: rgb(40, 63, 97); 
+    box-shadow: 0px 0px 20px rgba(43, 44, 45, 0.584);
+    color: rgb(40, 63, 97); 
+ }
+
+.home-mission-panel:hover {
+    transform: scale(1.1);
+}
+
+.home-mission-panel img {
+    max-width: 100%;
+    height: auto;
+ }
+
+.home-mission-panel h3 {
+    font-size: 28px;
+    color: rgb(40, 63, 97); 
+}
+
+/* home page team container */
+.home-page-team {
+    /* background-color:  rgb(221, 221, 221); */
+    padding-top: 20px;
+    padding-bottom: 80px;
+    margin: auto;
+}
+
+.team-container {
+    width: 76%;
+    margin: auto;  
+    background-color:  rgba(171, 180, 207, 0.405);
+    padding: 40px;
+    padding-bottom: 80px;
+    border-radius: 30px;
+}
+
+.home-page-team-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.home-page-team img {
+    max-width: 50%;
+    margin-right: 28px;
+    height: auto;
+}
+
+/* home page collage container */
+.home-page-collage {
+    padding-top: 20px;
+    padding-bottom: 80px;
+    margin: auto;
+}
+
+.collage-container {
+    width: 76%;
+    margin: auto;
+}
+
+.home-collage {
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: center;
+    align-items: center;
+}
+
+.home-collage img {
+    max-width: 100%; 
+    max-height: 250px;  
+    margin: 6px;
+}
+
+/* footer content */
+footer {
+    height: 160px;
+    display: flex;
+    background-color:  rgb(4, 1, 23);
+    border-top: .05em white solid;
+    align-items: center;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-content {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    align-content: space-between;
+    gap: 15vw;
+}
+
+.footer-link, .footer-left p, .footer-center p {
+    font-family: "Work Sans", Arial;
+    color: rgb(217, 222, 234);
+    font-weight: 300;
+    font-size: 20px;
+    text-decoration: none;
+}
+ 
+.footer-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-right {
+    display: flex;
+    gap: 60px;
+}
+
+.links-left, .links-right {
+    display: flex;
+    flex-direction: column;
+    line-height: 300%;
+}
+
+.footer-logo {
+    max-width: auto;
+    max-height: 90px;
+    margin-bottom: -1em;
+}
+
+.home-content p {
+    font-size: 18px;
+}
+
+.testimonials-section p {
+    font-size: 1em;
+}

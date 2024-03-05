@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --dusty-blue: rgb(166, 176, 200);
+
+    --dark-blue: rgb(4, 1, 23);
+    --dark-blue-faded: rgba(4, 1, 23, .80);
+
+    --light-blue: rgb(217, 222, 234);
+    --light-blue-solid: rgba(217, 222, 234, 1);
+    --light-blue-faded: rgba(217, 222, 234, .25);
+    
+}
+
+/* join page banner */
+.join-title {
+    background-image: linear-gradient(to bottom, var(--light-blue-faded), var(--light-blue-solid)),
+    url('../banner-images/rocket-bg.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 95vh;  
+}
+
+
+/* join page main content */
+.join-content {
+    margin-top: 0;
+    margin: auto;  
+    align-items: center;
+    background-color: var(--light-blue);
+}
+
+/* disclaimer bubble */
+.disclaimer {
+    background-color: var(--dusty-blue);
+    border: .2em var(--dark-blue) solid; 
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    width: 77%;
+    margin: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.disclaimer-text {
+    color: var(--dark-blue);
+    font-size: 1.8em;
+    font-weight: 400;
+    align-self: center;
+    font-family: "Work Sans", Arial;
+    line-height: 0;
+}
+
+.disclaimer-text strong{
+    font-weight: 600;
+}
+
+/* pathway section */
+.join-subtitle {
+    color: var(--dark-blue);
+    font-size: 2.4em;
+    font-weight: 700;
+    align-self: center;
+    font-family: "Work Sans", Arial;
+    line-height: 0;
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+.first-pathways-row {
+    width: 76%;
+    margin: auto;
+    display: flex;
+    margin-bottom: -10em;
+}
+
+.second-pathways-row {
+    width: 51%;
+    margin: auto;
+    display: flex;
+    margin-bottom: -10em;
+}
+
+.pathway {
+    width: 100%;
+    margin: 2em;
+    justify-content: left;
+}
+
+.bottom-pathway {
+    margin-top: 0;
+}
+
+.pathway-img {
+    width: 100%; 
+    height: 20%;
+    object-fit: cover;
+}
+
+.pathway-name {
+    color: var(--dark-blue);
+    font-size: 1.7em;
+    font-weight: 700;
+    align-self: center;
+    font-family: "Work Sans", Arial;
+    line-height: 0;
+}
+
+p {
+    color: var(--dark-blue);
+    font-size: 1em;
+    font-weight: 400;
+    align-self: center;
+    font-family: "Work Sans", Arial;
+}
+
+.pathway-skills-header {
+    color: var(--dark-blue);
+    font-size: 1em;
+    font-weight: 700;
+    align-self: center;
+    font-family: "Work Sans", Arial;
+}
+
+.required-skills {
+    color: var(--dark-blue);
+    font-size: 1em;
+    font-weight: 400;
+    align-self: center;
+    font-family: "Work Sans", Arial;
+}
+
+/* faq drop down */
+.faq-section {
+    width: 76%;
+    margin: auto;
+    padding-bottom: 2em;
+}
+.faq-subtitle {
+    margin-bottom: 1em;
+}
+
+/* question */
+.question {
+    background-color:  var(--light-blue);
+
+    color: var(--dark-blue);
+    font-size: 1.5em;
+    font-weight: 500;
+    font-family: "Work Sans", Arial;
+
+    cursor: pointer;
+    padding: .7em;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: .4s;
+}
+
+.active, .question:hover {
+    font-style: italic;
+}
+
+/* answer : hidden by default */
+.answer-box {
+    display: none;
+    overflow: hidden;
+    margin-left: 2.3em;
+}
+
+.answer {
+    color: var(--dark-blue);
+    font-size: 1.1em;
+    font-weight: 400;
+    font-family: "Work Sans", Arial;
+    margin-top: 0;
+}
+
+/* testimonials */
+.testimonials-section {
+    width: 76%;
+    margin: auto;
+    padding-bottom: 2em;
+}
+
+.testimonials-subtitle {
+    margin-bottom: 1em;
+}
+
+.testimonials {
+    margin: auto;
+    display: flex;
+    gap: 2.3em;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.testimonial {
+    border: .2em var(--dark-blue) solid;
+    border-radius: 1.5em;
+    padding: 1em;
+    background-color: var(--dusty-blue);
+    white-space: normal;
+    min-width: 20vw;
+    box-shadow: 6px 6px 8px var(--dusty-blue);
+    margin-bottom: 1em;
+}
+
+.testimonial-img {
+    width: 150%; 
+    height: auto; 
+    clip-path: circle();
+    object-fit: cover;
+    margin-left: -25%;
+    margin-bottom: 1em;
+}
+
+.testimonial-name {
+    color: var(--dark-blue);
+    font-size: 1.5em;
+    font-weight: 500;
+    font-family: "Work Sans", Arial;
+    margin: 0;
+    text-align: center;
+}
+
+.testimonial-team {
+    color: var(--dark-blue);
+    font-size: 1em;
+    font-weight: 400;
+    font-family: "Work Sans", Arial;
+    margin: 0;
+    margin-top: .3em;
+    text-align: center;
+}
+

@@ -1,0 +1,45 @@
+.team-title {
+    background-image: linear-gradient(to bottom, rgba(96, 89, 134, 0.231), rgba(119, 117, 137, 0.61)), url("../banner-images/team-photo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;  
+}
+
+/* team page main content */
+.team-content {
+    background-color: white;
+    padding-top: 60px;
+}
+
+.team-type-container {
+    width: 76%;
+    margin: auto;
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around;   */
+}
+
+.team-member {
+    width: 28%;
+    margin: 30px;  
+    text-align: center;
+}
+
+.team-member img {
+    border-radius: 50%;  
+    width: 100%;  
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.team-member h2 {
+    font-size: 24px;
+}
+
+.team-member p {
+    font-size: 18px;
+    margin: 0px;
+    margin-top: 10px;
+}

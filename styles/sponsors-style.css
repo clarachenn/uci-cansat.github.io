@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --dusty-blue: rgb(166, 176, 200);
+
+    --dark-blue: rgb(4, 1, 23);
+    --dark-blue-faded: rgba(4, 1, 23, .80);
+
+    --light-blue: rgb(217, 222, 234);
+    --light-blue-solid: rgba(217, 222, 234, 1);
+    --light-blue-faded: rgba(217, 222, 234, .25);
+    
+}
+
+/* sponsors page main content */
+.sponsors-content, .form-content{
+    margin-top: 0;
+    margin: auto;  
+    align-items: center;
+    background-color: var(--light-blue);
+    padding-bottom: 2em;
+}
+
+
+/* thank you bubble */
+.bubble {
+    background-color: var(--dusty-blue);
+    border: .2em var(--dark-blue) solid; 
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    width: 77%;
+    margin: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.bubble-text {
+    color: var(--dark-blue);
+    font-size: 1.8em;
+    font-weight: 400;
+    align-self: center;
+    font-family: "Work Sans", Arial;
+    line-height: 0;
+}
+
+/* sponsors page banner */
+.sponsors-title {
+    background-image: linear-gradient(to bottom, var(--light-blue-faded), var(--light-blue-solid)),
+    url('../banner-images/rocket-bg.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 95vh;  
+}
+
+/* sponsors grid */
+.sponsors {
+    width: 76%;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5em;
+}
+
+.sponsor {
+    border-radius: 1.5em;
+    padding: 1em;
+    white-space: normal;
+    min-width: 20vw;
+    
+}
+
+.sponsor-img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+    border-radius: 1em;
+    border: .2em var(--dark-blue) solid;
+    box-shadow: 0px 0px 10px rgba(43, 44, 45, 0.584);
+
+}
+
+.sponsor-img:hover {
+    transform: scale(1.15);
+}
